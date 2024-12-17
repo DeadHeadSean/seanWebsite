@@ -1,0 +1,55 @@
+/*
+Theme Name: Twenty Twenty-Five Child
+Template: twentytwentyfive
+*/
+
+:root {
+  --primary-color: #196887; /* Dark blue*/
+  --secondary-color: #6689BD; /* Light blue */
+  --accent-color-1: #40B7AE; /* Teal */
+  --accent-color-2: #A9D7D8; /* Light teal */
+  --accent-color-3: #9D8066; /* Warm brown */
+  --text-color: #333333; /* Dark text */
+  --bg-light: #f7f7f7; /* Light background */
+  --white: #ffffff; 
+  --black: #000000;
+}
+
+body {
+  font-family: 'Assistant', Arial, sans-serif;
+  margin: 0;
+  pasdding: 0;
+  color: var(--text-color);
+  background-color: var(--bg-light);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color-1);
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
