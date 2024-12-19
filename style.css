@@ -1,8 +1,3 @@
-/*
-Theme Name: Twenty Twenty-Five Child
-Template: twentytwentyfive
-*/
-
 :root {
   --primary-color: #196887; /* Dark blue*/
   --secondary-color: #6689BD; /* Light blue */
@@ -18,12 +13,12 @@ Template: twentytwentyfive
 body {
   font-family: 'Assistant', Arial, sans-serif;
   margin: 0;
-  pasdding: 0;
+  padding: 0;
   color: var(--text-color);
   background-color: var(--bg-light);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
   margin: 0;
   padding: 0;
@@ -52,4 +47,105 @@ a:hover {
 
 .button:hover {
   background-color: var(--secondary-color);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: right;
+  font-family: 'Assistant', Arial, sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  direction: rtl;
+}
+
+.hero_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.hero_layer {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero_layer--white {
+  background: #fff;
+  z-index: 1;
+}
+
+.hero_layer--pattern1 {
+  background: url("/wp-content/themes/twentytwentyfive-child/images/pattern1.png") no-repeat center center;
+  background-size: cover;
+  transform: rotate(-15deg);
+  transform-origin: center center;
+  z-index: 3;
+}
+
+.hero_layer--pattern2 {
+  background: url("/wp-content/themes/twentytwentyfive-child/images/pattern2.png") no-repeat center center;
+  background-size: cover;
+  transform: rotate(15deg);
+  transform-origin: center center;
+  z-index: 2;
+}
+
+/* Hero content styling */
+.hero_content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  color: #333;
+  text-align: center;
+} 
+
+.hero_logo img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.hero_headline {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.hero_subline {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.hero_cta {
+  display: inline-block;
+  background: #0073e6;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.hero_cta:hover {
+  background: #005bb5;
 }
